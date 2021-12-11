@@ -50,13 +50,13 @@ Name Us-Staat
 **source**
 Sektor der Firma
 
-**invest**
+**invest**???
 Menge die investiert wurde?
 
-**age_real**
+**age_real**???
 Alter in natürlichen Zahlen.
 
-**age**
+**age**??
 Bitte geben Sie Ihr Alter an:
 1 = 32 bis 40 Jahre
 2 = 41 bis 50 Jahre

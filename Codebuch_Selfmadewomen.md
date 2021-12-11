@@ -1,58 +1,61 @@
-Datensatz Semesterverbund CRPR2
+# Datensatz Semesterverbund CRPR2
 
 Codebuch Stand 2021-12 erstellt von Florian Striegl, Julia Dusemond, Lina Quotschalla, Pascal Eichner und Jessica Schreiner
-Inhalt
+
+## Inhalt
 
     Edges_Selfmadewomen.csv (Edgelist)
     Nodes_Selfmadewomen.csv (Nodelist)
     Codebuch_Selfmadewomen.md (Codierung der Datensätze)
 
-Ursprung und Datenerhebung
+## Ursprung und Datenerhebung
 
 Wir haben den Datensatz aus der Forbes-Liste der Self-Made-Women 2021 erhoben. Für unser Projekt analysieren wir die Top 25 und deren Investments, Stiftungen und Beteiligungen??
 
-Das Netzwerk ist ein ungerichtetes one-mode Akteursnetzwerk.
+Das Netzwerk ist ein gerichtetes two-mode Akteursnetzwerk.
 
-id
-(eindeutige Codierung des Knoten)
-codiert von 1 bis ??, jede ID entspricht einer Self-Made-Women
+## EDGE-Attribute
 
-weight
-Beziehungsstärke aufgrund der Nennung in den Fragen)
-3 = sehr starke Beziehung (erste Nennung),
-1 = starke Beziehung vorhanden (zweite Nennung)
+**from**
+id der Woman, die in der Firma involviert ist
 
-investment (Wird gemeinsam in etwas investiert?)
-1 = Ja, gemeinsames Investment
-2 = Nein, kein gemeinsames Investment
+**to**
+Company/Organisation, mit der die Woman eine Verbindung hat
 
-complicated
-1 = Beziehung (typische Paarbeziehung, d.h. reziprok zwischen beiden PartnerInnen),
-2 = Tinder-Like (hat die person rechts geswiped, muss aber nicht gegenseitig sein)
-3 = Crush (einseitig verliebt, ohne dass die Person etwas davon weiss).
+**relation**
+1 = Owner 
+2 = Anteile an der Firma
+3 = Spenden
+4 = Stiftung
 
-NODE-Attribute
 
-id
+## NODE-Attribute
+
+**id**
 Identische ID wie aus der edgelist zur Identifikation der Knoten. In diesem Fall sind alle personenbezogenen Daten anonymisiert von 1 bis 25.
 
-name numerische ID
+**name** Vorname abgekürzt, z.B. für Visualisierung, falls der Name zu lange ist
 
-name_first Vorname abgekürzt, z.B. für Visualiserung, falls der Name zu lange ist
+**type**
+0 = Women
+1 = Company
 
-net worth
+**net worth**
 Vermögen in $
 
-state
+**state**
 Name Us-Staat
 
-source
-Sektor der sie berühmt gemacht hat
+**source**
+Sektor der Firma
 
-age_real
+**invest**
+Menge die investiert wurde?
+
+**age_real**
 Alter in natürlichen Zahlen.
 
-age
+**age**
 Bitte geben Sie Ihr Alter an:
 1 = 32 bis 40 Jahre
 2 = 41 bis 50 Jahre
@@ -60,3 +63,4 @@ Bitte geben Sie Ihr Alter an:
 4 = 61 bis 70 Jahre
 5 = 71 bis 80 Jahre
 6 = über 80 Jahre
+

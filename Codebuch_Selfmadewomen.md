@@ -18,24 +18,24 @@ Das Netzwerk ist ein gerichtetes two-mode Akteursnetzwerk.
 ## EDGE-Attribute
 
 **from**
-id der Woman, die in der Firma involviert ist
+id der Frau, die in der Firma involviert ist
 
 **to**
-Company/Organisation, mit der die Woman eine Verbindung hat
+Company/Organisation, mit der die Frau eine Verbindung hat
 
 **relation**
-1 = Ownerin 
+1 = Ownerin zu 100 % (alleinig)
 2 = Anteile an der Firma
-3 = Spenden an die Firma
-4 = Stiftung an die Firma/NGO
+3 = Spenden an Organisation ab 500.000 US-Dollar
+4 = Stiftung
 
 
 ## NODE-Attribute
 
 **id**
-Identische ID wie aus der edgelist zur Identifikation der Knoten. In diesem Fall sind alle personenbezogenen Daten anonymisiert von 1 bis 25.
+Identische ID wie aus der edgelist zur Identifikation der Knoten.
 
-**name** Vorname abgekürzt, z.B. für Visualisierung, falls der Name zu lange ist
+**name** Ganzer Name
 
 **type**
 0 = Woman
@@ -43,6 +43,9 @@ Identische ID wie aus der edgelist zur Identifikation der Knoten. In diesem Fall
 
 **state**
 Name US-Staat
+
+**country**
+Land mit Sitz der Firma bzw. Herkunft der Frau
 
 **net worth**
 Vermögen in Us-Dollar
@@ -61,8 +64,12 @@ Sektor der Firma (z.B. IT, ...)
 3 = Stiftung
 4 = Firma
 
-**invest**??? ab einem bestimmten Wert
-Menge die investiert wurde?
+99 = Frau, nicht def. Art der Firma
+
+**invest**
+Menge an US-Dollar, die investiert wurde
+
+99 = nicht definiert
 
 **age**
 1 = 32 bis 40 Jahre
@@ -73,6 +80,4 @@ Menge die investiert wurde?
 6 = über 80 Jahre
 
 99 = Firma, nicht def. Alter
-
-
 

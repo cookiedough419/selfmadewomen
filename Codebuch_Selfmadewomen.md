@@ -1,4 +1,4 @@
-# Datensatz Semesterverbund CRPR2
+# Datensatz Self-Made-Women
 
 Codebuch Stand 2021-12 erstellt von Florian Striegl, Julia Dusemond, Lina Quotschalla, Pascal Eichner und Jessica Schreiner
 
@@ -10,9 +10,10 @@ Codebuch Stand 2021-12 erstellt von Florian Striegl, Julia Dusemond, Lina Quotsc
 
 ## Ursprung und Datenerhebung
 
-Wir haben den Datensatz aus der Forbes-Liste der Self-Made-Women 2021 erhoben. Für unser Projekt analysieren wir die Top 25 und deren Investments, Stiftungen und Beteiligungen??
+Wir haben den Datensatz aus der Forbes-Liste der Self-Made-Women 2021 erhoben. Für unser Projekt analysieren wir die Top 25 und deren Investments, Stiftungen und Beteiligungen an Firmen/Organisationen.
 
 Das Netzwerk ist ein gerichtetes two-mode Akteursnetzwerk.
+
 
 ## EDGE-Attribute
 

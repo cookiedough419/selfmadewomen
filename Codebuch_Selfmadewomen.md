@@ -24,10 +24,10 @@ id der Woman, die in der Firma involviert ist
 Company/Organisation, mit der die Woman eine Verbindung hat
 
 **relation**
-1 = Owner 
+1 = Ownerin 
 2 = Anteile an der Firma
-3 = Spenden
-4 = Stiftung
+3 = Spenden an die Firma
+4 = Stiftung an die Firma/NGO
 
 
 ## NODE-Attribute
@@ -38,30 +38,41 @@ Identische ID wie aus der edgelist zur Identifikation der Knoten. In diesem Fall
 **name** Vorname abgekürzt, z.B. für Visualisierung, falls der Name zu lange ist
 
 **type**
-0 = Women
+0 = Woman
 1 = Company
 
-**net worth**
-Vermögen in $
-
 **state**
-Name Us-Staat
+Name US-Staat
+
+**net worth**
+Vermögen in Us-Dollar
 
 **source**
-Sektor der Firma
+Sektor der Firma (z.B. IT, ...)
 
-**invest**???
+**source_type**
+1 = Baubereich
+2 = IT
+3 = Gastronomie-Sektor
+
+**organisation** (Art der Firma)
+1 = Partei
+2 = Organisation, an die gespendet wird
+3 = Stiftung
+4 = Firma
+
+**invest**??? ab einem bestimmten Wert
 Menge die investiert wurde?
 
-**age_real**???
-Alter in natürlichen Zahlen.
-
-**age**??
-Bitte geben Sie Ihr Alter an:
+**age**
 1 = 32 bis 40 Jahre
 2 = 41 bis 50 Jahre
 3 = 51 bis 60 Jahre
 4 = 61 bis 70 Jahre
 5 = 71 bis 80 Jahre
 6 = über 80 Jahre
+
+99 = Firma, nicht def. Alter
+
+
 
